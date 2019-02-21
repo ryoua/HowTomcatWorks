@@ -1,4 +1,4 @@
-package com.ryoua.ex01;
+package com.ryoua.ex01.pyrmont;
 
 import java.io.File;
 import java.io.FileInputStream;

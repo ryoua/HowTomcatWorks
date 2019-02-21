@@ -1,6 +1,5 @@
-package com.ryoua.ex01;
+package com.ryoua.ex02.pyrmont;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -8,15 +7,14 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class HttpServer {
-    public static final String WEB_ROOT = System.getProperty("user.dir") + File.separator + "webroot";
+public class HttpServer2 {
 
     private static final String SHUTDOWN_COMMAND = "/SHUTDOWN";
 
     private boolean shutdown = false;
 
     public static void main(String[] args) {
-        HttpServer server = new HttpServer();
+        HttpServer1 server = new HttpServer1();
         server.await();
     }
 
@@ -45,7 +43,13 @@ public class HttpServer {
 
                 Response response = new Response(output);
                 response.setRequest(request);
-                response.sendStaticResource();
+                if (request.getUri().startsWith("/servlet/")) {
+                    ServletProcessor2 processor = new ServletProcessor2();
+                    processor.process(request, response);
+                } else {
+                    StaticResourceProcessor processor = new StaticResourceProcessor();
+                    processor.process(request, response);
+                }
 
                 socket.close();
                 shutdown = request.getUri().equals(SHUTDOWN_COMMAND);

@@ -1,4 +1,4 @@
-package com.ryoua.ex02;
+package com.ryoua.ex02.pyrmont;
 
 import java.io.IOException;
 import java.io.InputStream;

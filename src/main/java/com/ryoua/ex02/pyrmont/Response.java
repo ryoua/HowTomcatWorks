@@ -1,6 +1,8 @@
-package com.ryoua.ex02;
+package com.ryoua.ex02.pyrmont;
 
 import java.io.*;
+
+import static com.ryoua.ex02.pyrmont.Constants.WEB_ROOT;
 
 public class Response {
     private static final int BUFFER_SIZE = 1024;
@@ -22,7 +24,7 @@ public class Response {
 
         try {
 
-            File file = new File(HttpServer1.WEB_ROOT, request.getUri());
+            File file = new File(WEB_ROOT, request.getUri());
             if (file.exists()) {
                 fis = new FileInputStream(file);
                 int ch = fis.read(bytes, 0, BUFFER_SIZE);
