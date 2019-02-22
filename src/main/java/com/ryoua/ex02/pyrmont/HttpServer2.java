@@ -14,7 +14,7 @@ public class HttpServer2 {
     private boolean shutdown = false;
 
     public static void main(String[] args) {
-        HttpServer1 server = new HttpServer1();
+        HttpServer2 server = new HttpServer2();
         server.await();
     }
 

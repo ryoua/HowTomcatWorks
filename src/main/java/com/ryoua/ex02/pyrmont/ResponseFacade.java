@@ -8,61 +8,61 @@ import java.util.Locale;
 
 public class ResponseFacade implements ServletResponse {
 
-    ServletResponse response= null;
+    ServletResponse response = null;
 
     public ResponseFacade(Response response) {
-        this.response = (ServletResponse) response;
+        this.response = response;
     }
 
     public String getCharacterEncoding() {
-        return null;
+        return response.getCharacterEncoding();
     }
 
     public ServletOutputStream getOutputStream() throws IOException {
-        return null;
+        return response.getOutputStream();
     }
 
     public PrintWriter getWriter() throws IOException {
-        return null;
+        return response.getWriter();
     }
 
     public void setContentLength(int i) {
-
+        response.setContentLength(i);
     }
 
     public void setContentType(String s) {
-
+        response.setContentType(s);
     }
 
     public void setBufferSize(int i) {
-
+        response.setBufferSize(i);
     }
 
     public int getBufferSize() {
-        return 0;
+        return response.getBufferSize();
     }
 
     public void flushBuffer() throws IOException {
-
+        response.flushBuffer();
     }
 
     public void resetBuffer() {
-
+        response.resetBuffer();
     }
 
     public boolean isCommitted() {
-        return false;
+        return response.isCommitted();
     }
 
     public void reset() {
-
+        response.reset();
     }
 
     public void setLocale(Locale locale) {
-
+        response.setLocale(locale);
     }
 
     public Locale getLocale() {
-        return null;
+        return response.getLocale();
     }
 }

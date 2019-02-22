@@ -31,7 +31,6 @@ public class ServletProcessor1 {
         Class myClass = null;
         try {
             myClass = loader.loadClass(servletName);
-
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }

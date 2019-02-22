@@ -16,106 +16,106 @@ public class RequestFacade implements ServletRequest {
     ServletRequest request = null;
 
     public RequestFacade(Request request) {
-        this.request = (ServletRequest) request;
+        this.request = request;
     }
 
     public Object getAttribute(String s) {
-        return null;
+        return request.getAttribute(s);
     }
 
     public Enumeration getAttributeNames() {
-        return null;
+        return request.getAttributeNames();
     }
 
     public String getCharacterEncoding() {
-        return null;
+        return request.getCharacterEncoding();
     }
 
     public void setCharacterEncoding(String s) throws UnsupportedEncodingException {
-
+        request.setCharacterEncoding(s);
     }
 
     public int getContentLength() {
-        return 0;
+        return request.getContentLength();
     }
 
     public String getContentType() {
-        return null;
+        return request.getContentType();
     }
 
     public ServletInputStream getInputStream() throws IOException {
-        return null;
+        return request.getInputStream();
     }
 
     public String getParameter(String s) {
-        return null;
+        return request.getParameter(s);
     }
 
     public Enumeration getParameterNames() {
-        return null;
+        return request.getParameterNames();
     }
 
     public String[] getParameterValues(String s) {
-        return new String[0];
+        return request.getParameterValues(s);
     }
 
     public Map getParameterMap() {
-        return null;
+        return request.getParameterMap();
     }
 
     public String getProtocol() {
-        return null;
+        return request.getProtocol();
     }
 
     public String getScheme() {
-        return null;
+        return request.getScheme();
     }
 
     public String getServerName() {
-        return null;
+        return request.getServerName();
     }
 
     public int getServerPort() {
-        return 0;
+        return request.getServerPort();
     }
 
     public BufferedReader getReader() throws IOException {
-        return null;
+        return request.getReader();
     }
 
     public String getRemoteAddr() {
-        return null;
+        return request.getRemoteAddr();
     }
 
     public String getRemoteHost() {
-        return null;
+        return request.getRemoteHost();
     }
 
     public void setAttribute(String s, Object o) {
-
+        request.setAttribute(s, o);
     }
 
     public void removeAttribute(String s) {
-
+        request.removeAttribute(s);
     }
 
     public Locale getLocale() {
-        return null;
+        return request.getLocale();
     }
 
     public Enumeration getLocales() {
-        return null;
+        return request.getLocales();
     }
 
     public boolean isSecure() {
-        return false;
+        return request.isSecure();
     }
 
     public RequestDispatcher getRequestDispatcher(String s) {
-        return null;
+        return request.getRequestDispatcher(s);
     }
 
     public String getRealPath(String s) {
-        return null;
+        return request.getRealPath(s);
     }
 }
