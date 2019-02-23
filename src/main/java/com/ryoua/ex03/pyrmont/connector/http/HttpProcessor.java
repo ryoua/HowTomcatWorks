@@ -1,14 +1,22 @@
 package com.ryoua.ex03.pyrmont.connector.http;
 
-import org.apache.catalina.connector.http.SocketInputStream;
+
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
 public class HttpProcessor {
+
+    public HttpProcessor(HttpConnector connector) {
+        this.connector = connector;
+    }
+
     HttpRequest request = null;
     HttpResponse response = null;
+    HttpRequestLine requestLine = new HttpRequestLine();
+    HttpConnector connector = null;
 
     public void process(Socket socket) {
         SocketInputStream input = null;
@@ -32,5 +40,9 @@ public class HttpProcessor {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void parseRequest(SocketInputStream input, OutputStream output) {
+
     }
 }
