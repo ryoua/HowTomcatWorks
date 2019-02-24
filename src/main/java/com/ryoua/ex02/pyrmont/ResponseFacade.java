@@ -18,6 +18,10 @@ public class ResponseFacade implements ServletResponse {
         return response.getCharacterEncoding();
     }
 
+    public String getContentType() {
+        return null;
+    }
+
     public ServletOutputStream getOutputStream() throws IOException {
         return response.getOutputStream();
     }
@@ -26,8 +30,16 @@ public class ResponseFacade implements ServletResponse {
         return response.getWriter();
     }
 
+    public void setCharacterEncoding(String s) {
+
+    }
+
     public void setContentLength(int i) {
         response.setContentLength(i);
+    }
+
+    public void setContentLengthLong(long l) {
+
     }
 
     public void setContentType(String s) {

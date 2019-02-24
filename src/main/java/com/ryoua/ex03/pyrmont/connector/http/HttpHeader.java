@@ -1,5 +1,12 @@
 package com.ryoua.ex03.pyrmont.connector.http;
 
+/**
+ * HTTP header enum type.
+ *
+ * @author Remy Maucherat
+ * @version $Revision: 1.4 $ $Date: 2002/03/18 07:15:40 $
+ */
+
 final class HttpHeader {
 
 

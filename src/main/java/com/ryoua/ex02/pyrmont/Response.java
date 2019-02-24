@@ -57,7 +57,15 @@ public class Response implements ServletResponse {
         return writer;
     }
 
+    public void setCharacterEncoding(String s) {
+
+    }
+
     public String getCharacterEncoding() {
+        return null;
+    }
+
+    public String getContentType() {
         return null;
     }
 
@@ -66,6 +74,10 @@ public class Response implements ServletResponse {
     }
 
     public void setContentLength(int i) {
+
+    }
+
+    public void setContentLengthLong(long l) {
 
     }
 

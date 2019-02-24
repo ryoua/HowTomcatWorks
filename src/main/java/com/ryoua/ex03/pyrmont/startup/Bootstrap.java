@@ -1,6 +1,6 @@
-package com.ryoua.ex03.pyrmont.startup;
+package ex03.pyrmont.startup;
 
-import com.ryoua.ex03.pyrmont.connector.http.HttpConnector;
+import ex03.pyrmont.connector.http.HttpConnector;
 
 public final class Bootstrap {
     public static void main(String[] args) {

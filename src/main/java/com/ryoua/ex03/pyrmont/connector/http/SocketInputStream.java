@@ -3,6 +3,7 @@ package com.ryoua.ex03.pyrmont.connector.http;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.EOFException;
+
 import org.apache.catalina.util.StringManager;
 
 /**
@@ -283,6 +284,7 @@ public class SocketInputStream extends InputStream {
      * function is meant to be used during the HTTP request header parsing.
      * Do NOT attempt to read the request body using it.
      *
+     * @param requestLine Request line object
      * @throws IOException If an exception occurs during the underlying socket
      *                     read operations, or if the given buffer is not big enough to accomodate
      *                     the whole line.
@@ -476,6 +478,7 @@ public class SocketInputStream extends InputStream {
     /*
     public int read(byte b[], int off, int len)
         throws IOException {
+
     }
     */
 
@@ -486,6 +489,7 @@ public class SocketInputStream extends InputStream {
     /*
     public long skip(long n)
         throws IOException {
+
     }
     */
 

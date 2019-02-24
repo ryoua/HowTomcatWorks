@@ -1,9 +1,7 @@
 package com.ryoua.ex02.pyrmont;
 
 
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletInputStream;
-import javax.servlet.ServletRequest;
+import javax.servlet.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -37,6 +35,10 @@ public class RequestFacade implements ServletRequest {
 
     public int getContentLength() {
         return request.getContentLength();
+    }
+
+    public long getContentLengthLong() {
+        return 0;
     }
 
     public String getContentType() {
@@ -117,5 +119,49 @@ public class RequestFacade implements ServletRequest {
 
     public String getRealPath(String s) {
         return request.getRealPath(s);
+    }
+
+    public int getRemotePort() {
+        return 0;
+    }
+
+    public String getLocalName() {
+        return null;
+    }
+
+    public String getLocalAddr() {
+        return null;
+    }
+
+    public int getLocalPort() {
+        return 0;
+    }
+
+    public ServletContext getServletContext() {
+        return null;
+    }
+
+    public AsyncContext startAsync() throws IllegalStateException {
+        return null;
+    }
+
+    public AsyncContext startAsync(ServletRequest servletRequest, ServletResponse servletResponse) throws IllegalStateException {
+        return null;
+    }
+
+    public boolean isAsyncStarted() {
+        return false;
+    }
+
+    public boolean isAsyncSupported() {
+        return false;
+    }
+
+    public AsyncContext getAsyncContext() {
+        return null;
+    }
+
+    public DispatcherType getDispatcherType() {
+        return null;
     }
 }
