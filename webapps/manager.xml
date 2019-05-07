@@ -12,6 +12,6 @@
 
   <!-- Link to the user database we will get roles from -->
   <ResourceLink name="users" global="UserDatabase"
-                type="org.org.apache.catalina.UserDatabase"/>
+                type="org.apache.catalina.UserDatabase"/>
 
 </Context>

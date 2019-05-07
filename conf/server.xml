@@ -14,9 +14,9 @@
 
 
   <!-- Uncomment these entries to enable JMX MBeans support -->
-  <Listener className="org.org.apache.catalina.mbeans.ServerLifecycleListener"
+  <Listener className="org.apache.catalina.mbeans.ServerLifecycleListener"
             debug="0"/>
-  <Listener className="org.org.apache.catalina.mbeans.GlobalResourcesLifecycleListener"
+  <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener"
             debug="0"/>
 
   <!-- Global JNDI resources -->
@@ -28,13 +28,13 @@
     <!-- Editable user database that can also be used by
          UserDatabaseRealm to authenticate users -->
     <Resource name="UserDatabase" auth="Container"
-              type="org.org.apache.catalina.UserDatabase"
+              type="org.apache.catalina.UserDatabase"
        description="User database that can be updated and saved">
     </Resource>
     <ResourceParams name="UserDatabase">
       <parameter>
         <name>factory</name>
-        <value>org.org.apache.catalina.users.MemoryUserDatabaseFactory</value>
+        <value>org.apache.catalina.users.MemoryUserDatabaseFactory</value>
       </parameter>
       <parameter>
         <name>pathname</name>
@@ -84,12 +84,11 @@
 
     <!-- Define a non-SSL Coyote HTTP/1.1 Connector on port 8080 -->
 <!--
-    <Connector className="org.org.apache.coyote.tomcat4.CoyoteConnector"
+    <Connector className="org.apache.coyote.tomcat4.CoyoteConnector"
                port="8080" minProcessors="5" maxProcessors="75"
                enableLookups="true" redirectPort="8443"
                acceptCount="10" debug="0" connectionTimeout="20000"
-               useURIValidationHack="false" />
-
+               useURIValidationHack="false" />
 -->
 
     <!-- Note : To disable connection timeouts, set connectionTimeout value 
@@ -97,28 +96,28 @@
 
     <!-- Define a SSL Coyote HTTP/1.1 Connector on port 8443 -->
     <!--
-    <Connector className="org.org.apache.coyote.tomcat4.CoyoteConnector"
+    <Connector className="org.apache.coyote.tomcat4.CoyoteConnector"
                port="8443" minProcessors="5" maxProcessors="75"
                enableLookups="true"
 	       acceptCount="10" debug="0" scheme="https" secure="true"
                useURIValidationHack="false">
-      <Factory className="org.org.apache.coyote.tomcat4.CoyoteServerSocketFactory"
+      <Factory className="org.apache.coyote.tomcat4.CoyoteServerSocketFactory"
                clientAuth="false" protocol="TLS" />
     </Connector>
     -->
 
     <!-- Define a Coyote/JK2 AJP 1.3 Connector on port 8009 -->
 <!--
-    <Connector className="org.org.apache.coyote.tomcat4.CoyoteConnector"
+    <Connector className="org.apache.coyote.tomcat4.CoyoteConnector"
                port="8009" minProcessors="5" maxProcessors="75"
                enableLookups="true" redirectPort="8443"
                acceptCount="10" debug="0" connectionTimeout="20000"
                useURIValidationHack="false"
-               protocolHandlerClassName="org.org.apache.jk.server.JkCoyoteHandler"/>
+               protocolHandlerClassName="org.apache.jk.server.JkCoyoteHandler"/>
 -->
     <!-- Define an AJP 1.3 Connector on port 8009 -->
     <!--
-    <Connector className="org.org.apache.ajp.tomcat4.Ajp13Connector"
+    <Connector className="org.apache.ajp.tomcat4.Ajp13Connector"
                port="8009" minProcessors="5" maxProcessors="75"
                acceptCount="10" debug="0"/>
     -->
@@ -126,7 +125,7 @@
     <!-- Define a Proxied HTTP/1.1 Connector on port 8082 -->
     <!-- See proxy documentation for more information about using this. -->
     <!--
-    <Connector className="org.org.apache.coyote.tomcat4.CoyoteConnector"
+    <Connector className="org.apache.coyote.tomcat4.CoyoteConnector"
                port="8082" minProcessors="5" maxProcessors="75"
                enableLookups="true"
                acceptCount="10" debug="0" connectionTimeout="20000"
@@ -134,14 +133,14 @@
     -->
 
     <!-- Define a non-SSL legacy HTTP/1.1 Test Connector on port 8083 -->
-    <Connector className="org.org.apache.catalina.connector.http.HttpConnector"
+    <Connector className="org.apache.catalina.connector.http.HttpConnector"
                port="8080" minProcessors="5" maxProcessors="75"
                enableLookups="true" redirectPort="8443"
                acceptCount="10" debug="0" />
 
     <!-- Define a non-SSL HTTP/1.0 Test Connector on port 8084 -->
     <!--
-    <Connector className="org.org.apache.catalina.connector.http10.HttpConnector"
+    <Connector className="org.apache.catalina.connector.http10.HttpConnector"
                port="8084" minProcessors="5" maxProcessors="75"
                enableLookups="true" redirectPort="8443"
                acceptCount="10" debug="0" />
@@ -170,11 +169,11 @@
            Request dumping is disabled by default.  Uncomment the following
            element to enable it. -->
       <!--
-      <Valve className="org.org.apache.catalina.valves.RequestDumperValve"/>
+      <Valve className="org.apache.catalina.valves.RequestDumperValve"/>
       -->
 
       <!-- Global logger unless overridden at lower levels -->
-      <Logger className="org.org.apache.catalina.logger.FileLogger"
+      <Logger className="org.apache.catalina.logger.FileLogger"
               prefix="catalina_log." suffix=".txt"
               timestamp="true"/>
 
@@ -184,20 +183,20 @@
            resources under the key "UserDatabase".  Any edits
            that are performed against this UserDatabase are immediately
            available for use by the Realm.  -->
-      <Realm className="org.org.apache.catalina.realm.UserDatabaseRealm"
+      <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
                  debug="0" resourceName="UserDatabase"/>
 
       <!-- Comment out the old realm but leave here for now in case we
            need to go back quickly -->
       <!--
-      <Realm className="org.org.apache.catalina.realm.MemoryRealm" />
+      <Realm className="org.apache.catalina.realm.MemoryRealm" />
       -->
 
       <!-- Replace the above Realm with one of the following to get a Realm
            stored in a database and accessed via JDBC -->
 
       <!--
-      <Realm  className="org.org.apache.catalina.realm.JDBCRealm" debug="99"
+      <Realm  className="org.apache.catalina.realm.JDBCRealm" debug="99"
              driverName="org.gjt.mm.mysql.Driver"
           connectionURL="jdbc:mysql://localhost/authority"
          connectionName="test" connectionPassword="test"
@@ -206,7 +205,7 @@
       -->
 
       <!--
-      <Realm  className="org.org.apache.catalina.realm.JDBCRealm" debug="99"
+      <Realm  className="org.apache.catalina.realm.JDBCRealm" debug="99"
              driverName="oracle.jdbc.driver.OracleDriver"
           connectionURL="jdbc:oracle:thin:@ntserver:1521:ORCL"
          connectionName="scott" connectionPassword="tiger"
@@ -215,7 +214,7 @@
       -->
 
       <!--
-      <Realm  className="org.org.apache.catalina.realm.JDBCRealm" debug="99"
+      <Realm  className="org.apache.catalina.realm.JDBCRealm" debug="99"
              driverName="sun.jdbc.odbc.JdbcOdbcDriver"
           connectionURL="jdbc:odbc:CATALINA"
               userTable="users" userNameCol="user_name" userCredCol="user_pass"
@@ -233,7 +232,7 @@
              user identity maintained across *all* web applications contained
              in this virtual host. -->
         <!--
-        <Valve className="org.org.apache.catalina.authenticator.SingleSignOn"
+        <Valve className="org.apache.catalina.authenticator.SingleSignOn"
                    debug="0"/>
         -->
 
@@ -244,7 +243,7 @@
              (to $CATALINA_HOME) or absolute path to the desired directory.
         -->
         <!--
-        <Valve className="org.org.apache.catalina.valves.AccessLogValve"
+        <Valve className="org.apache.catalina.valves.AccessLogValve"
                  directory="logs"  prefix="localhost_access_log." suffix=".txt"
                  pattern="common" resolveHosts="false"/>
         -->
@@ -255,7 +254,7 @@
              a different directory with the "directory" attribute.  Specify either a
              relative (to $CATALINA_HOME) or absolute path to the desired
              directory.-->
-        <Logger className="org.org.apache.catalina.logger.FileLogger"
+        <Logger className="org.apache.catalina.logger.FileLogger"
                  directory="logs"  prefix="localhost_log." suffix=".txt"
 	        timestamp="true"/>
 
@@ -293,19 +292,19 @@
 <!--
   <Service name="Tomcat-Apache">
 
-    <Connector className="org.org.apache.catalina.connector.warp.WarpConnector"
+    <Connector className="org.apache.catalina.connector.warp.WarpConnector"
      port="8008" minProcessors="5" maxProcessors="75"
      enableLookups="true" appBase="webapps"
      acceptCount="10" debug="0"/>
 
-    <Engine className="org.org.apache.catalina.connector.warp.WarpEngine"
+    <Engine className="org.apache.catalina.connector.warp.WarpEngine"
      name="Apache" debug="0">
 
-      <Logger className="org.org.apache.catalina.logger.FileLogger"
+      <Logger className="org.apache.catalina.logger.FileLogger"
               prefix="apache_log." suffix=".txt"
               timestamp="true"/>
 
-      <Realm className="org.org.apache.catalina.realm.MemoryRealm" />
+      <Realm className="org.apache.catalina.realm.MemoryRealm" />
 
     </Engine>
 

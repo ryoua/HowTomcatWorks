@@ -216,8 +216,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ryoua/tomcat/ex03/connector/http/SocketInputStream.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret line="106" selection-start-line="106" selection-end-line="106" />
+=======
+            <state relative-caret-position="509">
+              <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+>>>>>>> parent of 09c7fc9... update
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -259,6 +264,7 @@
     </option>
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="FindInProjectRecents">
     <findStrings>
       <find>getUril</find>
@@ -268,6 +274,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+=======
+>>>>>>> parent of 09c7fc9... update
 =======
 >>>>>>> parent of 09c7fc9... update
   <component name="IdeDocumentHistory">
@@ -335,6 +343,7 @@
     </option>
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
@@ -355,6 +364,8 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
 =======
+=======
+>>>>>>> parent of 09c7fc9... update
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="953" />
     <option name="width" value="974" />
@@ -545,6 +556,7 @@
       <option name="presentableId" value="Default" />
       <updated>1550623779069</updated>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1550623780441" duration="8591000" />
       <workItem from="1550729898353" duration="3164000" />
       <workItem from="1550733088629" duration="713000" />
@@ -565,16 +577,26 @@
 =======
       <workItem from="1550623780441" duration="3496000" />
 >>>>>>> parent of 09c7fc9... update
+=======
+      <workItem from="1550623780441" duration="3496000" />
+>>>>>>> parent of 09c7fc9... update
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="55947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="794" y="23" width="1390" height="1017" extended-state="0" />
     <editor active="true" />
+=======
+    <option name="totallyTimeSpent" value="3496000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+>>>>>>> parent of 09c7fc9... update
 =======
     <option name="totallyTimeSpent" value="3496000" />
   </component>
@@ -644,6 +666,7 @@
     <entry file="file://$PROJECT_DIR$/webroot/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/webroot/PrimitiveServlet.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -948,6 +971,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ryoua/ex01/HttpServer.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryoua/ex01/Response.java">
+>>>>>>> parent of 09c7fc9... update
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="509">
           <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
@@ -958,6 +984,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/tomcat-4.1.12-src/webapps/examples/WEB-INF/classes/JndiServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -990,10 +1017,23 @@
           <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryoua/ex01/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+>>>>>>> parent of 09c7fc9... update
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ryoua/tomcat/ex03/BootStrap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1005,6 +1045,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="27" selection-start-line="27" selection-end-line="27" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryoua/ex01/HttpServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+>>>>>>> parent of 09c7fc9... update
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
