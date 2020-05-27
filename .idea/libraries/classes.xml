@@ -1,0 +1,33 @@
+<component name="libraryTable">
+  <library name="classes">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-servletapi-5/jsr152/examples/WEB-INF/classes" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-servletapi-5/jsr152/examples/WEB-INF/jsp/applet" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-servletapi-5/jsr152/examples/plugin/applet" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-servletapi-5/jsr152/src/ant" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-servletapi-5/jsr152/src/share" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-servletapi-5/jsr154/examples/WEB-INF/classes" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-servletapi-5/jsr154/src/share" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-catalina/catalina/src/share" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-catalina/catalina/src/test" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-catalina/modules/cluster/src/share" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-catalina/tester/src/tester" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-catalina/webapps/admin/WEB-INF/classes" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-catalina/webapps/balancer/WEB-INF/classes" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-catalina/webapps/docs/appdev/sample/src" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-catalina/webapps/manager/WEB-INF/classes" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-connectors/coyote/src/java" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-connectors/coyote/src/test" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-connectors/http11/src/java" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-connectors/http11/src/test/java" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-connectors/jk/java" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-connectors/jk/jkant/java" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-connectors/jk/test" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-connectors/naming/src" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jakarta-tomcat-connectors/util/java" />
+      <root url="file://$PROJECT_DIR$/src/main/java/tomcat/jasper2/src/share" />
+    </SOURCES>
+  </library>
+</component>
