@@ -221,6 +221,7 @@ public class HttpRequest implements HttpServletRequest {
     public InputStream getStream() {
         return input;
     }
+
     public void setContentLength(int length) {
         this.contentLength = length;
     }

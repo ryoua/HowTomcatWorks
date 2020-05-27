@@ -45,15 +45,18 @@ public class HttpProcessor {
 
             response.setHeader("Server", "Servlet Container");
 
+            HttpRequestFacade requestFacade = new HttpRequestFacade(request);
+            HttpResponseFacade responseFacade = new HttpResponseFacade(response);
+
             parseRequest(inputStream, outputStream);
             parseHeaders(inputStream);
 
             if (request.getRequestURI().startsWith("/servlet")) {
                 ServletProcessor processor = new ServletProcessor();
-                processor.process(request, response);
+                processor.process(requestFacade, responseFacade);
             } else {
                 StaticResourceProcessor processor = new StaticResourceProcessor();
-                processor.process(request, response);
+                processor.process(requestFacade, responseFacade);
             }
 
             socket.close();
