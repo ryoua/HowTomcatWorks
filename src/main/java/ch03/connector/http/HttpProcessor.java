@@ -1,7 +1,7 @@
 package ch03.connector.http;
 
-import ch01.Request;
-import ch01.Response;
+import ch03.ServletProcessor;
+import ch03.StaticResourceProcessor;
 import org.apache.catalina.util.RequestUtil;
 import org.apache.naming.StringManager;
 
@@ -45,18 +45,16 @@ public class HttpProcessor {
 
             response.setHeader("Server", "Servlet Container");
 
-            HttpRequestFacade requestFacade = new HttpRequestFacade(request);
-            HttpResponseFacade responseFacade = new HttpResponseFacade(response);
 
             parseRequest(inputStream, outputStream);
             parseHeaders(inputStream);
 
             if (request.getRequestURI().startsWith("/servlet")) {
                 ServletProcessor processor = new ServletProcessor();
-                processor.process(requestFacade, responseFacade);
+                processor.process(request, response);
             } else {
                 StaticResourceProcessor processor = new StaticResourceProcessor();
-                processor.process(requestFacade, responseFacade);
+                processor.process(request, response);
             }
 
             socket.close();
